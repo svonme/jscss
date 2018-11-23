@@ -1,10 +1,17 @@
 import { Component } from 'react'
 
 let text = 'hello'
-let name = '1122'
+let name = 'svon'
 
 // 定义组件
 class Welcome extends React.Component {
+  constructor() {
+    super()
+  }
+  componentWillMount () {
+  }
+  componentDidMount () {
+  }
 	render() {
     let p = `${text} ${name}`
 		return (
@@ -14,5 +21,6 @@ class Welcome extends React.Component {
 		)
 	}
 }
+
 
 module.exports = Welcome

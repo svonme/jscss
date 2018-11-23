@@ -26,7 +26,8 @@ function config (env) {
   		extensions: ['.js', '.jsx', '.css', '.scss'],
       alias : {
         // src 源码跟目录
-        '@': resolve('src')
+        '@': resolve('src'),
+        'asyncComponent$': resolve('src/lib/async'),
       }
     },
     module: {
@@ -80,6 +81,7 @@ function config (env) {
       new webpack.ProvidePlugin({
       	React: 'react',
       	ReactDOM: 'react-dom',
+        asyncComponent: 'asyncComponent'
       }),
       new webpack.DefinePlugin({
         'process.env': option

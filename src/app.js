@@ -4,7 +4,7 @@ async function getApp () {
   if (process.env.mode === 'development') {
     return import('./development')
   }
-  return import('./test')
+  return import('@/router/index')
 }
 
 async function onload () {

@@ -1,4 +1,4 @@
-import App from '@/test'
+import App from '@/router/index'
 import { Component } from 'react'
 import { AppContainer } from 'react-hot-loader'
 

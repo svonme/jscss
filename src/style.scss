@@ -1,0 +1,12 @@
+%colorRed{
+  color: red;
+};
+
+:global(.bg){
+  background: #d1d1d1;
+}
+
+.text {
+  font-size: 14px;
+  @extend %colorRed;
+}

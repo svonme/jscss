@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% var config = htmlWebpackPlugin.options %>
+    <meta charset="utf-8">
+    <title><%= config.title %></title>
+    <% var opt = config.opt %>
+    <% if (opt.mode == 'development') { %>
+      <script src="/webpack-dev-server.js"></script>
+    <% } %>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

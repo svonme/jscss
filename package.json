@@ -5,7 +5,8 @@
   "scripts": {
     "test": "webpack --config build/test.js",
     "dev": "webpack-dev-server --config build/development.js",
-    "build": "webpack --config build/production.js"
+    "build": "webpack --config build/production.js",
+    "node": "node build/api.js"
   },
   "keywords": [],
   "author": "",
@@ -39,7 +40,7 @@
     "babel-preset-react": "^6.24.1",
     "es6-promise": "^4.2.4",
     "isomorphic-fetch": "^2.2.1",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.11",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-hot-loader": "^4.1.0",

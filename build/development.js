@@ -28,13 +28,18 @@ const config = {
     inline: true,
     hot: true, //实时刷新
     publicPath: '/',
-    historyApiFallback : true,
+    historyApiFallback : false,
     hotOnly: true,
     progress: true,
+    host: '0.0.0.0',
+    port: 8080
   }
 }
 
 module.exports = function (_, env) {
+  if (!env) {
+    env = {}
+  }
   env.mode = mode
   return merge(webpackcommon(env), config)
 }

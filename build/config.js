@@ -12,7 +12,8 @@ function config (env) {
   }
   return {
     entry: {
-      app: resolve('src/app.js')
+      app: resolve('src/app'),
+      style: resolve('src/style'),
     },
     output: {
       path: resolve('dest'),
@@ -22,7 +23,7 @@ function config (env) {
     //更多配置项
   	resolve: {
   		//自动扩展文件后缀名，意味着我们require模块可以省略不写后缀名
-  		extensions: ['.js', '.jsx'],
+  		extensions: ['.js', '.jsx', '.css', '.scss'],
       alias : {
         // src 源码跟目录
         '@': resolve('src')
@@ -44,7 +45,7 @@ function config (env) {
               loader: 'css-loader',
               query: {
                 minimize: true,
-                modules: true,
+                modules: false,
                 importLoaders: true,
                 localIdentName: '[hash:6]'
               }

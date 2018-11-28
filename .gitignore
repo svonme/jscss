@@ -1,6 +1,7 @@
 .DS_Store
 node_modules/
 /temp/
+/dest/
 /src/style/env.scss
 /build/single_entry.js
 npm-debug.log*

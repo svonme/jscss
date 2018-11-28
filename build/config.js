@@ -22,7 +22,7 @@ function config (env) {
     },
     //更多配置项
   	resolve: {
-  		//自动扩展文件后缀名，意味着我们require模块可以省略不写后缀名
+  		//自动扩展文件后缀名
   		extensions: ['.js', '.jsx', '.css', '.scss'],
       alias : {
         // src 源码跟目录
@@ -80,7 +80,8 @@ function config (env) {
       // 全局模块对象
       new webpack.ProvidePlugin({
       	React: 'react',
-      	ReactDOM: 'react-dom',
+        ReactDOM: 'react-dom',
+        // 异步组件模块
         asyncComponent: 'asyncComponent'
       }),
       new webpack.DefinePlugin({

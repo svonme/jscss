@@ -1,4 +1,4 @@
-import { Component, cloneElement, Children } from 'react'
+import { Component, Children } from 'react'
 import { Redirect } from 'react-router-dom'
 
 class Layout extends Component {
@@ -13,7 +13,8 @@ class Layout extends Component {
         }
       </div>)
     } else {
-      return (<Redirect to='/'/>)
+      // 异常时
+      return (<Redirect to='/404'/>)
     }
 	}
 }

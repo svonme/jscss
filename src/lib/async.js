@@ -1,4 +1,7 @@
-import React, { Component } from "react";
+/*
+  异步组件
+*/
+import { Component } from "react"
 
 export default function asyncComponent(importComponent) {
   class AsyncComponent extends Component {
@@ -9,14 +12,15 @@ export default function asyncComponent(importComponent) {
       }
     }
     async componentDidMount() {
+      // 异步加载组件
       const { default: component } = await importComponent()
       this.setState({
         component: component
       })
     }
     render() {
-      const Component = this.state.component
-      return Component ? <Component {...this.props} /> : null
+      const Comp = this.state.component
+      return Comp ? <Comp {...this.props} /> : null
     }
   }
 

@@ -15,7 +15,7 @@ async function onload () {
 }
 
 setTimeout(onload, 0)
-
+// 热更新
 if (module.hot) {
   module.hot.accept(function () {
     console.log('hot')

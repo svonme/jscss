@@ -3,7 +3,7 @@ import { Component } from 'react'
 import { AppContainer } from 'react-hot-loader'
 
 // 定义组件
-class Hot extends React.Component {
+class Hot extends Component {
 	render() {
 		return (
       <AppContainer>

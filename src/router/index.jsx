@@ -1,3 +1,6 @@
+/*
+  路由
+*/
 import { Component } from 'react'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 
